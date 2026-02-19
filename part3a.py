@@ -2,7 +2,7 @@ from random import randint #This line imports the randint function from the rand
 
 
 list = [] #name your list and make sure it is empty!
-randomNumber = randint(1,50) #the random number that we want to search for in the list
+randomNumber = int(input("What number do you want to search for throughout the list? (The randeom numbers range from 1-50)"))
 comparisons = 0 #initial comparisons
 found = False
 
@@ -18,7 +18,6 @@ print("") #paragraph for nice spacing/visual looks
 print("Searching for number:",randomNumber) #searching for the random number in list
 
 
-#part2a can be found on the google doc, not here since the function was removed.
 for numbers in list:  # Name your variable in the for loop
     comparisons += 1  # Increment the counter for each comparison
     if numbers == randomNumber:
